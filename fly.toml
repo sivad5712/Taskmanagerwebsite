@@ -1,0 +1,39 @@
+
+app = "task-manager"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 3001
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 3001
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+[env]
+  NODE_ENV = "production"
+  PORT = "3001"
+  BCRYPT_ROUNDS = "12"
+  DATABASE_PATH = "/data/database.sqlite"
+  RATE_LIMIT_WINDOW_MS = "900000"
+  RATE_LIMIT_MAX_REQUESTS = "100"
+  LOG_LEVEL = "info"
+
+[[mounts]]
+  destination = "/data"
+  source = "task_manager_data"

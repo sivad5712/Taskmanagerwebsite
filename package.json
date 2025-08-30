@@ -1,0 +1,15 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "This repository contains a full‑stack Kanban style task manager designed to boost team productivity. It features a dark themed user interface, drag‑and‑drop task management, real‑time collaboration, authentication with role‑based access control and detailed activity logs for every task. The project is structured into two separate applications: a **Node.js/Express** backend that persists data in a lightweight **SQLite** database and a **React** frontend built with **Vite** and **Material UI**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
