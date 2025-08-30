@@ -2,6 +2,10 @@
 
 This repository contains a full‑stack Kanban style task manager designed to boost team productivity. It features a dark themed user interface, drag‑and‑drop task management, real‑time collaboration, authentication with role‑based access control and detailed activity logs for every task. The project is structured into two separate applications: a **Node.js/Express** backend that persists data in a lightweight **SQLite** database and a **React** frontend built with **Vite** and **Material UI**.
 
+## 🌟 Live Demo
+
+**[Try the Live Website](https://taskmanagerwebsite.abacusai.app/)**
+
 ## 🚀 Technology Stack
 
 ### Backend
@@ -123,4 +127,3 @@ This implementation serves as a solid foundation but can be extended in numerous
 * **Comments and attachments** – Enhance tasks with rich comments or file uploads.
 * **Notifications** – Send email or push notifications when tasks are updated.
 
-Feel free to fork this project and tailor it to your team’s workflow!
